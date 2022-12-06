@@ -20,11 +20,15 @@
         (argComputerMove == 'papier' && argPlayerMove == 'nożyce') ||
         (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
       ) {
-        printMessage('Ty wygrywasz!');
+        printMessage(
+          `Wybrałeś ${argPlayerMove}, a Twój przeciwnik ${argComputerMove}. Wygrywasz!`
+        );
       } else if (argComputerMove == argPlayerMove) {
-        printMessage('Remis!');
+        printMessage('Remis! Ty i twój przeciwnik wybraliście to samo!');
       } else {
-        printMessage('Wygrywa przeciwnik!');
+        printMessage(
+          `Wybrałeś ${argPlayerMove}, a Twój przeciwnik ${argComputerMove}. Niestety, przegrałeś!`
+        );
       }
     };
 
